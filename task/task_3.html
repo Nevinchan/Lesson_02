@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>task_3</title>
+</head>
+<body>
+   <h1>Задача 3</h1>
+   <p>
+      Дано вартість одиниці товару і кількість. Знайти загальну вартість та ПДВ (5% від загальної вартості).
+   </p>
+   <script>
+      //Вводим данные
+
+      const costOFgoods = parseFloat(prompt("Ввести стоимость единицы товара","0"))
+      const quantityOFgoods = parseFloat(prompt("Ввести количество товара","0"))
+
+      //Получаем данные и выполняем программу
+
+      const totaLCost = costOFgoods * quantityOFgoods
+      const percentageOFthetotalcost = totaLCost * 5 / 100
+
+
+      //Выводим результат
+
+      document.write(`
+      Общая стоимость: ${totaLCost} <br>
+      НДС 5% ${percentageOFthetotalcost}`)
+   </script>
+<div>
+   <a href="/index.html"> Вернуться</a>
+</div>
+
+</body>
+</html>

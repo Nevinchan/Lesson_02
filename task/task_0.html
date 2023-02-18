@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>task_0</title>
+</head>
+<body>
+   <h1>Задача 0</h1>
+   <p>
+      Обчислити значення виразів
+   </p>
+   <img src="/img/image.png" alt=""> <br>
+   <script>
+      //Вводим данные
+      const a = parseFloat(prompt("Введите a", "0"))
+      const b = parseFloat(prompt("Введите b", "0"))
+      const c = parseFloat(prompt("Введите c", "0"))
+
+      //Получаем данные и выполняем программу
+      const S1 = a + 12 + b;
+      const S2 = Math.sqrt((a+b) / 2 * a);
+      const S3 = Math.cbrt ((a+b)*c);
+      const S4 = Math.sin(a/(-b));
+
+      //Выводим результат
+      document.write(`
+      S1 = ${S1} <br>
+      S2 = ${S2} <br>
+      S3 = ${S3} <br>
+      S4 = ${S4}
+      `)
+   </script>
+   <div>
+      <a href="/index.html"> Вернуться</a>
+   </div>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>task_6</title>
+</head>
+<body>
+   <h1>Задача 6</h1>
+   <p>З клавіатури вводяться вартість товару та кількість одиниць 3 товарів. <br>
+      Обчислити вартість кожного товару окремо та загальну вартість. <br>
+      Вивести чек (як у супермаркеті) використовуючи елементи розмітки.</p>
+
+      <script>
+      //Вводим данные
+      const priceOFgoods1 = parseFloat(prompt("Введите стоимость первого товара","0"))
+      const quantityOFgoods1 = parseInt(prompt("Введите количество первого товара","0"))
+      const priceOFgoods2 = parseFloat(prompt("Введите стоимость второго товара","0"))
+      const quantityOFgoods2 = parseInt(prompt("Введите количество второго товара","0"))
+      const priceOFgoods3 = parseFloat(prompt("Введите стоимость третьего товара","0"))
+      const quantityOFgoods3 = parseInt(prompt("Введите количество третьего товара","0"))
+
+      //Получаем данные и выполняем программу
+
+      const totalPrice1 = priceOFgoods1 * quantityOFgoods1
+      const totalPrice2 = priceOFgoods2 * quantityOFgoods2
+      const totalPrice3 = priceOFgoods3 * quantityOFgoods3
+      const totalAmount = totalPrice1 + totalPrice2 + totalPrice3
+      
+      //Выводим результат
+      document.write(`
+      <table border="2px">
+         <tr>
+            <th>Наименование</th>
+               <th>Стоимость</th>
+               <th>Количество</th>
+               <th>Сумма</th>
+         </tr>
+         <th>Товар1</th>
+         <th>${priceOFgoods1.toFixed(2)}</th>
+         <th>${quantityOFgoods1}</th>
+         <th>${totalPrice1.toFixed(2)} грн.</th>
+         <tr>
+            
+         <th>Товар2</th>
+         <th>${priceOFgoods2.toFixed(2)}</th>
+         <th>${quantityOFgoods2}</th>
+         <th>${totalPrice2.toFixed(2)} грн.</th>
+         </tr>
+
+         <tr>
+         <th>Товар3</th>
+         <th>${priceOFgoods3.toFixed(2)}</th>
+         <th>${quantityOFgoods3}</th>
+         <th>${totalPrice3.toFixed(2)} грн.</th>
+         </tr>
+         </table>
+
+         <h2>Общая стоимость: ${totalAmount.toFixed(2)} грн.</h2>
+
+         `)
+
+      
+      </script>
+   <div>
+      <a href="/index.html"> Вернуться</a>
+   </div>
+</body>
+</html>
